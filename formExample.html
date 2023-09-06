@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="book.html" enctype="multipart/form-data" method="post">
+        <h1>Employee Registration</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <input type="number" value="1234234" disabled name=""User_Id> <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name" autocomplete="off"><br>
+            <label for="">LastName</label>
+            <input type="text" placeholder="lastname"  >
+            <br>
+            <label for="">Image</label>
+            <input type="file">
+            <label for="">Gender</label>
+            <input type="radio" name="gen" > Male
+            <input type="radio" name="gen" checked>Female
+            <br>
+            <label for="">Countries</label>
+            <select name="" id="">
+            <optgroup  label="Asia">
+                
+                <option value="">afg</option>
+                <option value="">ir</option>
+            
+            </optgroup>
+
+            <optgroup label="Europe">
+            
+                <option value="">uk</option>
+                <option value="">swiss</option>
+           
+            </optgroup>
+            
+            </select>
+            <br>
+
+           <label for="schools">Scool Name</label>
+            <input list="schools">
+            <datalist id="schools">
+                <option value="Ahmad School"></option>
+                <option value="Khan"></option>
+                <option value="jan"></option>
+            </datalist>
+            
+     
+        <label for="">Phone</label>
+        <input type="tel" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Qualification</legend>
+        <label for="">Bacelore</label>
+        <input type="checkbox">yes
+        <input type="checkbox">No
+        <br>
+        <label for="">Color</label>
+        <input type="color">
+        <label for="">Date</label>
+        <input type="date" min="2010" max="2023">
+        <label for="">age</label>
+        <input type="number" min="1" max="120" step="3">
+        <button type="submit">Submit</button>
+    </fieldset>
+
+     </form>
+</body>
+</html>
